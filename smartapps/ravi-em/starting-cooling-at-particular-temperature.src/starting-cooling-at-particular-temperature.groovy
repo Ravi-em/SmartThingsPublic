@@ -47,8 +47,7 @@ def updated() {
 	initialize()
 }
 
-def initialize() {
-	// TODO: subscribe to attributes, devices, locations, etc.
+def initialize() {	
     subscribe(sensor, "temperature", "manageCooling")
     subscribe(thethermostat, "thermostatMode", "manageThermostat")
 }
